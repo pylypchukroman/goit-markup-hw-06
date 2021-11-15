@@ -409,9 +409,14 @@
           </ul>
         </div>
       </section>
+      <!-- Модалка -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal-button-close" data-modal-close></button>
+          <button class="modal-button-close" data-modal-close>
+            <svg class="icon-close-img">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
           <form class="subscribe-form">
             <div class="main-form">
@@ -512,12 +517,19 @@
           </div>
           <div class="subscribe">
             <p class="subscribe-text">Подпишитесь на рассылку</p>
+
             <form name="signup_form" autocomplete="on" novalidate>
-              <label>
-                Email
-                <input type="email" name="email" />
-              </label>
-              <button type="submit">Подписаться</button>
+              <div class="subscription-fild">
+                <input type="email" name="email" placeholder="E-mail" />
+                <button type="submit">
+                  Подписаться
+                  <div class="icon-send">
+                    <svg class="icon-send-img">
+                      <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </form>
           </div>
         </div>
