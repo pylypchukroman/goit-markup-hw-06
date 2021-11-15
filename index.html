@@ -412,6 +412,40 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-button-close" data-modal-close></button>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="subscribe-form">
+            <div class="main-form">
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+              <div class="form-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail" />
+              </div>
+              <div class="form-field">
+                <label for="comment">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="commen"
+                  cols="30"
+                  rows="1"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </div>
+
+            <input type="checkbox" name="check" id="check" />
+            <label for="check"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
@@ -475,6 +509,16 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="subscribe">
+            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <form name="signup_form" autocomplete="on" novalidate>
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+              <button type="submit">Подписаться</button>
+            </form>
           </div>
         </div>
       </div>
