@@ -438,18 +438,23 @@
                   name="comment"
                   id="commen"
                   cols="30"
-                  rows="1"
+                  rows="10"
                   placeholder="Введите текст"
                 ></textarea>
               </div>
             </div>
-
-            <input type="checkbox" name="check" id="check" />
-            <label for="check"
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
-            >
-
-            <button type="submit">Отправить</button>
+            <div class="checkbox-fild">
+              <input type="checkbox" name="check" id="check" />
+              <label for="check"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="checkbox-fild-contract"
+                  >Условия договора</a
+                ></label
+              >
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </div>
