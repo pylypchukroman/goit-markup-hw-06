@@ -837,11 +837,7 @@ ul {
   margin-bottom: 12px;
   color: var(--title-text-color);
 }
-/* .subscribe-form {
-  margin: 0 40px;
-} */
 .form-field {
-  border: 1px solid blue;
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
@@ -856,6 +852,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  width: 100%;
   padding: 0 0;
 }
 .form-field textarea::placeholder {
@@ -874,6 +871,7 @@ ul {
   border-radius: 4px;
   height: 120px;
   padding: 12px 16px;
+  resize: none;
 }
 .form-field:nth-child(4) {
   height: 138px;
@@ -882,7 +880,6 @@ ul {
   margin-bottom: 20px;
 } */
 .checkbox-fild {
-  text-align: center;
   margin-top: 20px;
 }
 .submit-btn {
@@ -923,4 +920,72 @@ ul {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+.check-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-text span {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin-right: 7px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.visually-hiden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.inpute-icon-check {
+  fill: var(--primary-white);
+}
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+.inpute-wrap {
+  position: relative;
+}
+.modal-inpute-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-inpute:focus {
+  border: 1px solid var(--accent-color);
+}
+.modal-inpute:focus + .modal-inpute-icon {
+  fill: var(--accent-color);
+}
+.modal-inpute {
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.inpute-wrap input {
+  padding-left: 42px;
+}
+.comment-inpute {
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-inpute:focus {
+  border: 1px solid var(--accent-color);
 }
