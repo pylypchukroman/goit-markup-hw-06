@@ -722,6 +722,7 @@ ul {
   padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
+  color: var(--primary-white);
 }
 .subscription-fild input::placeholder {
   font-weight: 400;
@@ -740,6 +741,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 
   font-weight: 600;
   font-size: 16px;
@@ -865,6 +867,12 @@ ul {
 }
 .form-field label {
   margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
 }
 .form-field textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -894,6 +902,7 @@ ul {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.87;
